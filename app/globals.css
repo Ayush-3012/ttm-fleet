@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  --ring: 0 0% 0%;
+}
+
+/* Typography tweaks */
+.prose p {
+  @apply leading-relaxed;
+}
+
+/* Focus visibility */
+:focus-visible {
+  outline: 2px solid rgb(37 99 235);
+  outline-offset: 2px;
+}
+
+/* Gradient backgrounds */
+.bg-hero {
+  background: radial-gradient(
+      60% 60% at 50% 0%,
+      rgba(37, 99, 235, 0.25) 0%,
+      rgba(37, 99, 235, 0) 60%
+    ),
+    linear-gradient(180deg, #0b1220 0%, #111827 100%);
+}
