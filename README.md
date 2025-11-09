@@ -10,7 +10,7 @@ for smooth animations, clean structure, and professional design quality.
 
 ## 🌟 Live Demo
 
-🔗 **Hosted URL:** []()  
+🔗 **Hosted URL:** [https://ttm-fleet.vercel.app/](https://ttm-fleet.vercel.app/)  
 🔗 **GitHub Repo:** [https://github.com/Ayush-3012/ttm-fleet](https://github.com/Ayush-3012/ttm-fleet)
 
 ---
@@ -155,7 +155,7 @@ export async function POST(req: Request) {
 
 👨‍💻 Author
 Ayush Kumar
-📍 India
+📍 Delhi
 💼 Frontend Developer | UI/UX Enthusiast
 📧 diveshsrivastava31@gmail.com
 

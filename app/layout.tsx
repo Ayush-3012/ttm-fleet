@@ -16,11 +16,11 @@ export const metadata: Metadata = {
     title: "TTM Fleet — Fleet Management Platform",
     description:
       "Track, manage, and optimize fleets with TTM’s connected platform.",
-    // url: "https://ttm-fleet.vercel.app",
+    url: "https://ttm-fleet.vercel.app/",
     siteName: "TTM Fleet",
     type: "website",
   },
-  // metadataBase: new URL("https://ttm-fleet.vercel.app"),
+  metadataBase: new URL("https://ttm-fleet.vercel.app"),
 };
 
 export default function RootLayout({
