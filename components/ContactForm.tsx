@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import axios from "axios";
 
 const ContactForm = () => {
   const [status, setStatus] = useState<
@@ -14,17 +15,15 @@ const ContactForm = () => {
     const formData = new FormData(e.currentTarget);
 
     try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        body: formData,
-      });
-      if (res.ok) {
+      const res = await axios.post("/api/contact", formData);
+      if (res.status === 200) {
         setStatus("success");
-        e.currentTarget.reset();
+        e.currentTarget?.reset();
       } else {
         throw new Error("Failed");
       }
-    } catch {
+    } catch (error) {
+      console.log(error);
       setStatus("error");
     }
   }
