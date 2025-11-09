@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 type Props = {
@@ -20,8 +21,10 @@ export default function CTAButton({
       : "bg-white text-slate-900 ring-1 ring-slate-300 hover:bg-slate-50";
 
   return (
-    <Link href={href} className={`${base} ${styles}`}>
-      {children}
-    </Link>
+    <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.98 }}>
+      <Link href={href} className={`${base} ${styles}`}>
+        {children}
+      </Link>
+    </motion.div>
   );
 }

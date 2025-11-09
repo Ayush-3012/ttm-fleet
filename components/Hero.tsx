@@ -1,5 +1,6 @@
 import Image from "next/image";
 import CTAButton from "./CTAButton";
+import MotionWrapper from "./MotionWrapper";
 
 export default function Hero() {
   return (
@@ -7,14 +8,18 @@ export default function Hero() {
       <section className="bg-hero text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 py-20 sm:py-28 grid md:grid-cols-2 items-center gap-10">
           <div>
-            <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">
-              Real-time Fleet Visibility & ELD Compliance
-            </h1>
+            <MotionWrapper>
+              <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">
+                Real-time Fleet Visibility & ELD Compliance
+              </h1>
+            </MotionWrapper>
 
-            <p className="mt-4 max-w-lg text-slate-200 leading-relaxed">
-              TTM unifies telematics, ELD, safety, and maintenance so you can
-              operate safer, reduce costs, and scale with confidence.
-            </p>
+            <MotionWrapper>
+              <p className="mt-4 max-w-lg text-slate-200 leading-relaxed">
+                TTM unifies telematics, ELD, safety, and maintenance so you can
+                operate safer, reduce costs, and scale with confidence.
+              </p>
+            </MotionWrapper>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <CTAButton href="#contact">Book a Demo</CTAButton>

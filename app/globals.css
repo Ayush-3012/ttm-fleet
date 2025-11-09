@@ -39,3 +39,21 @@ h6 {
 .prose p {
   @apply leading-relaxed;
 }
+
+.bg-hero {
+  background: linear-gradient(180deg, #0b1220 0%, #111827 100%),
+    radial-gradient(
+      circle at 30% 10%,
+      rgba(37, 99, 235, 0.25) 0%,
+      rgba(37, 99, 235, 0) 70%
+    );
+  background-blend-mode: overlay;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f8fafc;
+}
